@@ -11,7 +11,7 @@ function requestListener(req, res) {
   console.log('IP written');
 });
 	res.writeHead(302,  {Location: url});
-	res.end();
+	res.end("redirecting now");
 }
 
 const server = http.createServer(requestListener);
